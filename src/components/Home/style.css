@@ -1,0 +1,16 @@
+.productsContainer {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 30px;
+  padding-top: 70px;
+  place-content: center;
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, auto);
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    padding-top: 20px;
+  }
+}
