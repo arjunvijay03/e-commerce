@@ -1,5 +1,5 @@
 import { ProductType } from "@/types";
-import { CartItemType } from "@/types/cart.type";
+import { CartItemType } from "@/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 type IntitialStateType = {

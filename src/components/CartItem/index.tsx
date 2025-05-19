@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./style.css";
-import { CartItemType } from "@/types/cart.type";
+import { CartItemType } from "@/types";
 
 const CartItem = ({
   item,
