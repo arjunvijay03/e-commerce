@@ -6,7 +6,6 @@ const ProductPage = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params;
 
   const product: ProductType = await getProducts(id);
-  console.log(product);
   return <ProductDetailsComponent product={product} />;
 };
 

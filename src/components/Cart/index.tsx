@@ -61,7 +61,7 @@ export default function CartPage() {
         </>
       ) : (
         <div className="emptyCart">
-          <FontAwesomeIcon icon={faShoppingCart} color="#00000040" size="5x" />
+          <FontAwesomeIcon icon={faShoppingCart} color="#fff" size="5x" />
           <p className="emptyCartText">Your Cart is currently empty!</p>
         </div>
       )}

@@ -1,14 +1,25 @@
 .productDetailsContainer {
   padding-top: 50px;
   display: flex;
+  justify-content: center;
+  margin-inline: auto;
+
   @media (max-width: 600px) {
     flex-direction: column;
+  }
+  @media (min-width: 1300px) {
+    width: 90%;
+    gap: 30px;
   }
 }
 .imageContainer {
   flex: 2;
   display: flex;
   justify-content: center;
+  padding: 30px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-inline: 10px;
 }
 
 .image {
@@ -20,6 +31,7 @@
   flex: 3;
   padding: 10px;
   margin-top: 30px;
+  color: white;
 }
 
 .title {
@@ -29,7 +41,7 @@
 
 .category {
   font-size: 0.95rem;
-  color: #666;
+  color: #c2c2c2;
   margin-bottom: 1rem;
 }
 
@@ -37,6 +49,9 @@
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  @media (min-width: 1300px) {
+    max-width: 85%;
+  }
 }
 
 .rating {
@@ -48,7 +63,7 @@
 
 .reviewCount {
   font-size: 0.9rem;
-  color: #555;
+  color: #c2c2c2;
   margin-left: 0.5rem;
 }
 

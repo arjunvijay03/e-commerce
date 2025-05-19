@@ -26,7 +26,8 @@ export default function RootLayout({
       <body>
         <ReduxProvider>
           <HeaderComponent />
-          <div style={{ marginTop: "70px" }}>{children}</div>
+          <div style={{ minHeight: "calc(100vh - 100px)" }}>{children}</div>
+          <div className="footer">© Arjun Vijay</div>
         </ReduxProvider>
       </body>
     </html>

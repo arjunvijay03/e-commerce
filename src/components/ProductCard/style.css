@@ -5,6 +5,7 @@
   border-radius: 10px;
   overflow: hidden;
   color: #181c45;
+  background-color: #fff;
   @media (max-width: 600px) {
     width: 170px;
   }

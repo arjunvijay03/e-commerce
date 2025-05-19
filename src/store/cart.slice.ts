@@ -19,17 +19,13 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action: PayloadAction<ProductType>) => {
-      console.log("called");
       const existingItem = state.cartProducts.find(
         (item) => item.product.id === action.payload.id
       );
 
       if (existingItem) {
         existingItem.quantity += 1;
-        console.log("d");
       } else {
-        console.log("sd");
-
         state.cartProducts = [
           ...state.cartProducts,
           { product: action.payload, quantity: 1 },
@@ -38,7 +34,6 @@ const cartSlice = createSlice({
 
       state.totalQuantity += 1;
       state.totalPrice += action.payload.price;
-      console.log(state.cartProducts);
     },
 
     removeFromCart: (state, action: PayloadAction<number>) => {
