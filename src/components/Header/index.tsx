@@ -9,7 +9,9 @@ const Header = () => {
   const totalQuantity = useAppSelector((state) => state.cart.totalQuantity);
   return (
     <div className="headerContainer">
-      <p className="logo">E-Commerce</p>
+      <Link href={"/"} className="logo">
+        E-Commerce
+      </Link>
       <div className="iconContainer">
         <Link href={"/"} style={{ textDecoration: "none" }}>
           <div className="iconWrapper">

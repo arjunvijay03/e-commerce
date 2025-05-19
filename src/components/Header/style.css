@@ -14,8 +14,12 @@
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 40px;
   color: #cb8e0c;
+  font-family: "Fleur De Leah", cursive;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
 }
 
 .iconContainer {
